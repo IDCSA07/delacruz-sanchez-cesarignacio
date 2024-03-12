@@ -121,7 +121,7 @@
     
     .col-sm-4 {
         -webkit-box-flex: 0;
-        -webkit-flex: 0 0 33.33333%;
+        -webkit-flex: 0 0 33.%;
         -ms-flex: 0 0 33.33333%;
         flex: 0 0 33.33333%;
         max-width: 33.33333%;
@@ -142,4 +142,21 @@
     
     .text-primary {
         color: #f06161 !important;
+    }
+    
+    .foot {
+        background-color: white;
+        padding: 0px 50px;
+        border-radius: 0px;
+        color: blue;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        width: 300px;
+    }
+    
+    .text1 {
+        background-color: blanchedalmond;
+        padding: 0px 50px;
+        border-radius: 10%;
+        color: black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
