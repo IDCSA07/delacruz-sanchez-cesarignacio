@@ -63,11 +63,18 @@
     }
     
     .que {
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 0 33.33333%;
-        -ms-flex: 0 0 33.33333%;
-        flex: 0 0 33.33333%;
-        max-width: 33.33333%;
+        display: flex;
+    }
+    
+    .quees {
+        color: gray;
+    }
+    
+    .piepagina {
+        background-color: aliceblue;
+        width: auto;
+        width: 700px;
+        border-radius: 30px;
     }
     
     .widget {
@@ -154,9 +161,25 @@
     }
     
     .text1 {
-        background-color: blanchedalmond;
-        padding: 0px 50px;
-        border-radius: 10%;
+        background-color: antiquewhite;
+        width: auto;
+        height: 200px;
         color: black;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .image1 {
+        border-radius: 50%;
+        height: 200px;
+    }
+    
+    #buttonreset {
+        color: gray;
+        background-color: aliceblue;
+        border: 0px;
+        border-radius: 20px;
+    }
+    
+    #buttonreset:hover {
+        background-color: aqua;
     }
