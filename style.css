@@ -1,5 +1,77 @@
-* {
-    background-color: bisque;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: blue
+* header {
+    background-color: black;
+    opacity: 50%;
+    padding: 0px 0px;
+    border-radius: 35px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+}
+
+ul,
+li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+}
+
+h1 {
+    color: white;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(45deg, rgba(15, 18, 23, 1), rgba(46, 22, 18, 1), rgba(92, 42, 9, 1), rgba(226, 120, 18, 1), rgba(238, 144, 74, 1), rgba(255, 210, 181, 1), rgba(184, 143, 115, 1), rgba(64, 71, 64, 1), rgba(24, 55, 58, 1), rgba(13, 100, 107, 1));
+    background-size: 400% 400%;
+    animation: cambiar 30s ease infinite;
+}
+
+@keyframes cambiar {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+footer {
+    padding: 10px 30px;
+}
+
+div {
+    text-align: center;
+}
+
+.port {
+    background-color: rgba(0, 0, 255, 0.404);
+    width: 500px;
+    border-radius: 35px;
 }
