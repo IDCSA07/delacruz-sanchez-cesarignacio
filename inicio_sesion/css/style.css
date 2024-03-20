@@ -1,24 +1,37 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
 }
 
 body {
-    background-image: url();
-    background-size: cover;
-    color: rgb(41, 238, 179);
+    color: rgb(41, 238, 178);
     display: flex;
     align-items: center;
     flex-direction: column;
     align-content: center;
+    background: linear-gradient(45deg, rgb(46, 106, 211), rgb(223, 56, 26), rgb(216, 93, 11), rgb(201, 152, 106), rgb(207, 102, 22), rgb(207, 199, 193), rgb(116, 49, 5), rgba(64, 71, 64, 1), rgb(25, 234, 253), rgb(9, 75, 80));
+    background-size: 400% 400%;
+    animation: cambiar 30s ease infinite;
+}
+
+@keyframes cambiar {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .userlogin {
-    background-color: #ffff;
+    background-color: #ffffff;
     width: 600px;
     height: 50px;
     text-align: center;
-    border-radius: 15 px solid rgb(156, 234, 16);
+    border-radius: 15px solid rgb(158, 234, 16);
     margin-top: 10%;
 }
 
@@ -26,4 +39,43 @@ body {
     font-size: 28px;
     font-style: italic;
     color: blue;
+}
+
+.passwordlogin {
+    background-color: rgba(255, 255, 255, 0.799);
+    width: 600px;
+    height: 50px;
+    text-align: center;
+    border-radius: 15px solid rgb(156, 234, 16);
+    margin-top: 10%;
+}
+
+.userid {
+    margin-right: 5px;
+    margin-left: 50px;
+    padding-left: 5px;
+    float: center;
+    height: 25px;
+    width: 300px;
+    border: solid 2px #09c222;
+    border-radius: 10px;
+    justify-items: center;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons button {
+    border-radius: 15px;
+    width: 130px;
+    height: 35px;
+}
+
+.buttons img {
+    width: 10px;
+    height: 10px;
 }
