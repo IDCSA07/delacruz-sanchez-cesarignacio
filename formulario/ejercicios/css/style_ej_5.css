@@ -1,0 +1,106 @@
+ul,
+li {
+    display: inline;
+    padding: 0px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+}
+
+header {
+    background-color: rgba(245, 245, 220, 0.363);
+    border-radius: 35px;
+    width: 1325px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+}
+
+h2 {
+    color: white;
+    background-color: rgba(210, 180, 140, 0.449);
+    border-radius: 30px;
+    padding: 5px 10px;
+}
+
+.sumando {
+    text-align: center;
+    border-radius: 45px;
+}
+
+.contain {
+    text-align: center;
+    border-radius: 45px;
+}
+
+.text {
+    text-align: center;
+    height: 300 px;
+}
+
+.body {
+    background-color: #83255d;
+}
+
+button:hover {
+    color: blue;
+    background-color: bisque;
+}
+
+button {
+    background-color: gray;
+    color: aliceblue;
+}
+
+#num3 {
+    background-color: gray;
+}
+
+#num3:hover {
+    background-color: #4d5645;
+}
+
+#num2 {
+    background-color: gray;
+}
+
+#num2:hover {
+    background-color: #4d5645;
+}
+
+#num1 {
+    background-color: gray;
+}
+
+#num1:hover {
+    background-color: #4d5645;
+}
+
+#num4 {
+    background-color: gray;
+}
+
+#num4:hover {
+    background-color: #4d5645;
+}
+
+#num5 {
+    background-color: gray;
+}
+
+#num5:hover {
+    background-color: #4d5645;
+}
