@@ -71,7 +71,6 @@ function problema2() {
 function problema3() {
     const input = document.getElementById("p3-input").value;
 
-    // Verificar si se ingresaron letras que no son mayúsculas
     const letrasMayusculas = /^[A-Z,]+$/;
     if (!letrasMayusculas.test(input)) {
         const alerta = document.createElement("div");
@@ -82,7 +81,6 @@ function problema3() {
         return;
     }
 
-    // Limpiar la alerta si no hay errores
     document.getElementById("p3-output").textContent = "";
 
     const palabras = input.split(",");
@@ -91,7 +89,6 @@ function problema3() {
     let caracteresUnicosMax = [];
 
     palabras.forEach(palabra => {
-        // Convertir la palabra a mayúsculas y eliminar caracteres no alfabéticos
         const palabraMayusculas = palabra.replace(/[^A-Z]/g, "").toUpperCase();
         const caracteresUnicos = [...new Set(palabraMayusculas)].join(', ');
         if (caracteresUnicos.length > maxCaracteresUnicos) {
