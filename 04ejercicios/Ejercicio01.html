@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de inversion</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" method="post" name="formulario">
+            <label for="">Formulario para inversiones kawaii con un 3.7% de incremento anual</label>
+            <br>
+            <table class="table">
+                <tr>
+                    <td>
+                        Introduce la cantidad que deseas invertir en 1 año
+                    </td>
+                    <td>
+                        <input type="text" name="cantidad" id="cantidadi" onkeypress="return validarn(event)">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" value="Calcular Interes" name="enviar" onclick="interes()">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Su saldo total con el interes al 3.7% anual es de:</td>
+                    <td>
+                        <input type="text" name="sueldoi" id="saldoi" readonly="readonly" class="input_text">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="button" value="Borrar Datos" name="borra" onclick="borrar()">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script src="./js/funciones.js"></script>
+</body>
+
+</html>
