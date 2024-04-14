@@ -33,15 +33,6 @@ function problema2() {
     var p2_y4 = document.querySelector('#p2-y4').value;
     var p2_y5 = document.querySelector('#p2-y5').value;
 
-    /*
-    para encontrar el minimo producto escalar entre 2 vectores,
-    tenemos que realizar las operaciones correspondientes que son
-    con el maximo valor de un vector por el minimo valor del otro
-    vector
-    
-    */
-
-
     var v1 = [p2_x1, p2_x2, p2_x3, p2_x4, p2_x5];
     var v2 = [p2_y1, p2_y2, p2_y3, p2_y4, p2_y5];
 
@@ -64,9 +55,11 @@ function problema2() {
         p2_producto += v1[i] * v2[i];
     }
 
+
     document.querySelector('#p2-output').textContent =
         'Producto escalar minimo : ' + p2_producto;
 }
+
 
 function problema3() {
     const input = document.getElementById("p3-input").value;
@@ -86,15 +79,15 @@ function problema3() {
     const palabras = input.split(",");
     let maxCaracteresUnicos = 0;
     let palabraMax = "";
-    let caracteresUnicosMax = [];
+    let caracteresUnicosMax = "";
 
     palabras.forEach(palabra => {
         const palabraMayusculas = palabra.replace(/[^A-Z]/g, "").toUpperCase();
-        const caracteresUnicos = [...new Set(palabraMayusculas)].join(', ');
-        if (caracteresUnicos.length > maxCaracteresUnicos) {
-            maxCaracteresUnicos = caracteresUnicos.length;
+        const caracteresUnicos = new Set(palabraMayusculas);
+        if (caracteresUnicos.size > maxCaracteresUnicos) {
+            maxCaracteresUnicos = caracteresUnicos.size;
             palabraMax = palabraMayusculas;
-            caracteresUnicosMax = caracteresUnicos;
+            caracteresUnicosMax = [...caracteresUnicos].join(', ');
         }
     });
 
